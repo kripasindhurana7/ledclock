@@ -10,7 +10,7 @@
 void handleIR(){}
 #else
 
-IRrecv* irrecv;
+irrecv = new IRrecv(5);
 //change pin in NpbWrapper.h
 
 decode_results results;
