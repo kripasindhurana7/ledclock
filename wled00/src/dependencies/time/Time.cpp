@@ -1,4 +1,4 @@
-/*
+hi/*
   time.c - low level time and date functions
   Copyright (c) Michael Margolis 2009-2014
 
@@ -34,13 +34,6 @@
 #include <WProgram.h> 
 #endif
 
-#include "TimeLib.h"
-#include "bangla_clock_voice.h"
-
-// NTP time update er por or LED update loop e
-int hour = hour(localTime);  // localTime theke hour ber koro
-updateAMPMIndicator(hour);
-playHourVoice12AMPM(hour);
 
 static tmElements_t tm;          // a cache of time elements
 static time_t cacheTime;   // the time the cache was updated
