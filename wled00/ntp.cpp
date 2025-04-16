@@ -568,6 +568,9 @@ void setTimeFromAPI(uint32_t timein) {
     updateLocalTime();
     calculateSunriseAndSunset();
     ledClockTimeUpdated();
+	  int currentHour = hour(timein);
+  updateAMPMIndicator(currentHour);
+  playHourVoice12AMPM(currentHour);
   }
   if (presetsModifiedTime == 0) presetsModifiedTime = timein;
 }
